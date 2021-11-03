@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.stream.Stream;
 
@@ -17,7 +18,7 @@ public class Principal {
 	static ArrayList<Empleado> listaEmp = new ArrayList<Empleado>();
 	static ArrayList<Departamento> listaDepto = new ArrayList<Departamento>();
 
-	public static void main(String[] args) throws IOException, ParserConfigurationException, TransformerException {
+	public static void main(String[] args) throws IOException, ParserConfigurationException, TransformerException, ClassNotFoundException, SQLException {
 		
 		//Lectura Fichero
 		Path rutaFichero = Paths.get("D:\\PRUEBAS\\empresa.csv");
